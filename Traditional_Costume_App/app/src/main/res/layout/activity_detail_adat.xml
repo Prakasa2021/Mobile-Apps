@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udinus.Traditional_Costume_App.DetailAdat">
+
+    <View
+        android:id="@+id/bg_atas"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#0099ff" />
+
+    <View
+        android:id="@+id/bg_atas2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_wave"
+        android:layout_below="@id/bg_atas" />
+
+    <TextView
+        android:id="@+id/judulPesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Sewa Pakaian Adat"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/imgAdat"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/judulPesan"/>
+
+    <TextView
+        android:id="@+id/namaPakaian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgAdat"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/nama_pakaian_adat"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/hargaPakaian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namaPakaian"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/harga" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/custom_button"
+        android:padding="10dp"
+        android:onClick="formPemesanan"
+        android:text="Sewa"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/hargaPakaian" />
+
+</RelativeLayout>

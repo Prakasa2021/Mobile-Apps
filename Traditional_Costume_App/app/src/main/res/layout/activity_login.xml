@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udinus.Traditional_Costume_App.Login">
+
+    <View
+        android:id="@+id/bg_atas"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#0099ff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bg_atas2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_atas" />
+
+    <ImageView
+        android:id="@+id/loginIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_baseline_login_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/judulSewa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="AdatRenT"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintRight_toLeftOf="@+id/loginIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/judulSewa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="Masukkan identitas Anda"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintRight_toLeftOf="@id/loginIcon"
+        app:layout_constraintTop_toTopOf="@id/judulSewa" />
+
+    <EditText
+        android:id="@+id/namaInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="16dp"
+        android:background="@drawable/custom_form"
+        android:hint="Nama"
+        android:inputType="text"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_atas2" />
+
+    <EditText
+        android:id="@+id/alamatInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:padding="16dp"
+        android:background="@drawable/custom_form"
+        android:hint="Alamat"
+        android:inputType="text"
+        android:drawableStart="@drawable/ic_baseline_home_24"
+        android:drawablePadding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaInput" />
+
+    <EditText
+        android:id="@+id/nomorInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:padding="16dp"
+        android:background="@drawable/custom_form"
+        android:hint="Telepon/WhatsApp"
+        android:inputType="phone"
+        android:drawableStart="@drawable/ic_baseline_smartphone_24"
+        android:drawablePadding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alamatInput" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/custom_button"
+        android:padding="10dp"
+        android:onClick="formSewa"
+        android:text="Pesan"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomorInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
